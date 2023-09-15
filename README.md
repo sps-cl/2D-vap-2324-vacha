@@ -8,6 +8,10 @@ Zde je seznam absolvovaných hodin a nějaké materiály k tomu. Zbytek je v tea
 
 [1 - První praktická a teoretická hodina](01_lesson/README.md)
 
+[2 - Druhá teoretická hodina](02_lesson/README.md)
+
+[2.1 - Git cheatsheet](02_lesson/GIT_CHEATSHEET.MD)
+
 
 ## Samovzdělání, rozvoj, zajímavosti
 Zde přikládám materiály, kde můžete rozvíjet své dovednosti ve vývoji aplikací. 
