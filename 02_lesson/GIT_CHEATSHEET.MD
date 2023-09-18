@@ -1,4 +1,4 @@
-Git Commands
+Příkazy v GITU
 ====
 
 Pokud máte někdo chuť, forkněte toto repo, přeložte tento materiál a udělejte pull request. :) 
