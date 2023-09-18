@@ -18,10 +18,10 @@ Quick start
 `git push`
 
 
-Let's get started
+Pojďme začít 
 ----
 
-`git init` - Create a new local repository
+`git init` - Vytvoření nového lokálního repozitáře
 
 `git help <command>` - Get help with a specific git command.
 
