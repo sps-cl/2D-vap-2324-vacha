@@ -23,7 +23,7 @@ Pojďme začít
 
 `git init` - Vytvoření nového lokálního repozitáře
 
-`git help <command>` - Get help with a specific git command.
+`git help <command>` - Zobrazit nápovědu specifického příkazu
 
 Checking what's up
 ----
