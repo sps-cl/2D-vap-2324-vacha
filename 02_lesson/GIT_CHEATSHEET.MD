@@ -51,7 +51,7 @@ Committing
 > * If you want to commit everything in the repo without staging it first (_dangerous_), `git commit -a -m 'message'`.
 
 
-`git commit --amend` - Change the last commit. *Don‘t amend published commits!!*
+`git commit --amend` - Změň poslední commit. *Don‘t amend published commits!!*
 
 Commit History
 ----
