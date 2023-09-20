@@ -12,6 +12,11 @@ Zde je seznam absolvovaných hodin a nějaké materiály k tomu. Zbytek je v tea
 
 [2.1 - Git cheatsheet](02_lesson/GIT_CHEATSHEET.MD)
 
+[3 - Třetí hodina - praktická](03_lesson/README.md)
+
+[3.1 Návod na větvení](03_lesson/GIT_BRANCHING.md)
+
+
 
 ## Samovzdělání, rozvoj, zajímavosti
 Zde přikládám materiály, kde můžete rozvíjet své dovednosti ve vývoji aplikací. 
