@@ -21,14 +21,14 @@ Základní Ppříkazy
 
 `git init` - Vytvoření nového lokálního repozitáře.
 
-`git help <příkaz>` - Zobrazit nápovědu ke specifickému příkazu.
+`git help <příkaz>` - Zobrazí nápovědu ke specifickému příkazu.
 
 Získání informací
 ----
 
 `git status` - Uvede všechny soubory, které se od posledního commitu změnily, a soubory jsou k commitu aktuálně připraveny.
 
-`git diff` - Uvádí všechny změny v každém souboru, který se změnil od posledního commitu. Přidejte falg '--staged' pro zobrazily změn které jsou připraveny k commitu.
+`git diff` - Uvádí všechny změny v každém souboru, který se změnil od posledního commitu. Přidejte flag `--staged` pro zobrazení změn, které jsou připraveny k commitu.
 
 Commity
 ----
@@ -39,7 +39,7 @@ Commity
 
 `git commit -a` - Připraví všechny změny v projektu ke commitu.
 
-`git commit` - commitne změny.
+`git commit` - Commitne změny.
 
 `git commit <soubor> -m 'popis commitu'` - Commitne změny ze souboru `<soubor>`.
 
@@ -85,13 +85,13 @@ Vzdálený repozitář
 
 Důkazem rostoucí popularity využívání vzdálených repozitářů *(možná jste o jednom takovém malém slyšeli: GitHub)*, tak je jednou z nejsilnějších funkcí gitu sledovat vzdálené repozitáře.
 
-`git remote -v` - Vypíše všechny vzdálené repozitáře. flag `-v` je zkráceně pro  *verbose (podrobné informace)* zobrazí více informací o vzdáleném repozitáři jako je třeba jeho url adresa.
+`git remote -v` - Vypíše všechny vzdálené repozitáře. Flag `-v` je zkratka pro verbose *(podrobné informace)*. Zobrazí více informací o vzdáleném repozitáři jako je třeba jeho url adresa.
 
 `git remote show <vzdálený-repozitář>` - Zobrazí informace ke specifickému vzdálenému zepozitáři `<vzdálený-repozitář>`.
 
 `git remote add <jméno> <url>` - Přidá nový vzdálený repozitář pojmenovaný `<jméno>` s url adresou `<url>`.
 
-`git fetch <repozitář>` - Stáhne změny ze vzdáleného repozizáře `<repozitář>`, ale nanstaví ho jako HEAD.
+`git fetch <repozitář>` - Stáhne změny ze vzdáleného repozitáře "<repozitář>", ale nastaví je jako HEAD.
 
 `git fetch --dry-run -v` -  `--dry-run` Zobrazí co by se stalo při provedení příkazu bez provádění změn na projektu. `-v` *verbose (podrobné informace)*.
 
@@ -111,11 +111,11 @@ Pravá síla stojící za gitem je zpráva rozdílů mezi jednotivými vezemi pr
 
 `git merge <branch>` - Připojí `<branch>` na aktuální HEAD.
 
-`git rebase <branch>` - Nasvaví HEAD na `<branch>`. **! NEDĚLEJTE U JIŽ NAHRÁTÝCH COMMITŮ !**
+`git rebase <branch>` - Nastaví HEAD na `<branch>`. **! NEDĚLEJTE TO S JIŽ NAHRÁNÝMI COMMITY !**
 
 `git rebase --abort` - Zruší probíhající rebase.
 
-`git rebase --continue` - Pozastaví rebase pokud narazí na problém/y které musíte vyřešit. Po vyřeŠení problémů bude rebase pokračovat.
+`git rebase --continue` - Pozastaví rebase, pokud narazíte na problémy, které musíte vyřešit. Po vyřešení problémů bude rebase pokračovat.
 
 `git mergetool` - Použije nakonfugorvaný nástroj pro mergenutí k řešení problémů.
 
@@ -130,7 +130,7 @@ Každý děláme chyby.
 
 `git reset --hard HEAD` - Odstraní všechny změny v projektu.
 
-`get checkout -f` - Odstraní všechny změny v aktiálním adresáři.
+`git checkout -f` - Odstraní všechny změny v aktuálním adresáři.
 
 `git checkout HEAD <soubor>` - Odstraní všechny změny v souboru `<soubor>`.
 
@@ -143,9 +143,9 @@ Každý děláme chyby.
 `git reset --keep <commit>` - Navrátí HEAD na předchozí commit a zachová vŠechny necommitnuté změny.
 
 Tipy a triky
----
+----
 
-``git checkout -- `git ls-files -m` `` - Obnovit upravené soubory v aktuálním adresáři.
+``git checkout -- `git ls-files -m` `` - Obnoví upravené soubory v aktuálním adresáři.
 
 ``rm -rf `git ls-files --other --exclude-standard` `` - Odstraní nesledované soubory. **! BUĎTE OPATRNÍ !**
 
