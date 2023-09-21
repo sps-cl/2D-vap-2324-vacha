@@ -11,12 +11,12 @@ Rychlý začátek
 
 `git add .` - Připraví všechny změny v adresáři a všech jeho podadresářích ke commitu.
 
-`git commit -m "popis změn"` - Commitne změny s popisem uvedeným v úvozovkách.
+`git commit -m "popis změn"` - Commitne změny s popisem uvedeným v uvozovkách.
 
 `git push` - Nahraje commitnuté změny na vzdálený repozitář.
 
 
-Základní Ppříkazy 
+Základní Příkazy 
 ----
 
 `git init` - Vytvoření nového lokálního repozitáře.
@@ -26,7 +26,7 @@ Základní Ppříkazy
 Získání informací
 ----
 
-`git status` - Uvede všechny soubory, které se od posledního commitu změnily, a soubory jsou k commitu aktuálně připraveny.
+`git status` - Uvede všechny soubory, které se od posledního commitu změnil a soubory, které jsou k commitu aktuálně připraveny.
 
 `git diff` - Uvádí všechny změny v každém souboru, který se změnil od posledního commitu. Přidejte flag `--staged` pro zobrazení změn, které jsou připraveny k commitu.
 
@@ -35,7 +35,7 @@ Commity
 
 `git add .` - Připraví všechny změny v adresáři a všech jeho podadresářích ke commitu.
 
-`git add -p <soubor>` - Připraví změny souboru `<soubor>` k commitu. *Příkaz lze použít vÍcekrát k vybrání všech potřebných souborů*
+`git add -p <soubor>` - Připraví změny souboru `<soubor>` k commitu. *Příkaz lze použít vícekrát k vybrání všech potřebných souborů.*
 
 `git commit -a` - Připraví všechny změny v projektu ke commitu.
 
@@ -43,18 +43,17 @@ Commity
 
 `git commit <soubor> -m 'popis commitu'` - Commitne změny ze souboru `<soubor>`.
 
-> * `-m` - flag je následován popisem commitu v úvozovkách.
-> * Pokud chcete použít ve zprávě úvozovky `'` napište celou zprávu mezi apostrofami `'`, nebo naopak.
-> * `git commit <podadresář> -m 'popis commitu'` - Commitne všechy změny v podadresáři `<podadresář>`.
-> * `git commit -a -m 'popis commitu'` - Commitne všechny změny v projeku. **! NEBEZPEČNÉ !**
-
+> * `-m` - flag je následován popisem commitu v uvozovkách.
+> * Pokud chcete použít ve zprávě uvozovky `'` napište celou zprávu mezi apostrofami `'`, nebo naopak.
+> * `git commit <podadresář> -m 'popis commitu'` - Commitne všechny změny v podadresáři `<podadresář>`.
+> * `git commit -a -m 'popis commitu'` - Commitne všechny změny v projektu. **! NEBEZPEČNÉ !**
 
 `git commit --amend` - Změní/upraví poslední commit. **! NEUPRAVUJTE JIŽ ZVEŘEJNĚNÉ COMMITY !**
 
 Historie commitů
 ----
 
-`git log --oneline` - Zobrazí historii commitů, `--oneline` flag upraví výsledek aby každý commit zabíral pouze jeden řádek.
+`git log --oneline` - Zobrazí historii commitů, `--oneline` flag upraví výsledek, aby každý commit zabíral pouze jeden řádek.
 
 `git log -p <soubor>` - Zobrazí historii pro `<soubor>`.
 
@@ -65,11 +64,12 @@ Historie commitů
 Branche
 ----
 
-`git checkout <branch/commit>` - Změní projekt na `<branch/commit>`, `-b` flag vytvoří nový branch pokud takový neexistuje. Místo jména branche lze pozuží i hash určitého commitu na který se chcete dostat.
+`git checkout <branch/commit>` - Změní projekt na `<branch/commit>`, `-b` flag vytvoří nový branch, pokud takový neexistuje. Místo jména branche lze pozuží i hash určitého commitu na, který se chcete dostat.
 
-`git checkout <branch> <file-path>` Obnoví soubory z jiné větve nebo commitu do aktuálního branche
+`git checkout <branch> <file-path>` Obnoví soubory z jiné větve nebo commitu do aktuálního branche.
 
-`git branch` - vypíše všechny branche v projektu
+`git branch` - vypíše všechny branche v projektu.
+
 `git branch <jméno>` - Bez přepnutí vytvoří nový branch se jménem `<jméno>`
 
 `git checkout --track <vzdálený-branch>/<lokální-branch>` - Vytvoří lokální branch závislý na vzdáleném repozitáři.
@@ -87,7 +87,7 @@ Důkazem rostoucí popularity využívání vzdálených repozitářů *(možná
 
 `git remote -v` - Vypíše všechny vzdálené repozitáře. Flag `-v` je zkratka pro verbose *(podrobné informace)*. Zobrazí více informací o vzdáleném repozitáři jako je třeba jeho url adresa.
 
-`git remote show <vzdálený-repozitář>` - Zobrazí informace ke specifickému vzdálenému zepozitáři `<vzdálený-repozitář>`.
+`git remote show <vzdálený-repozitář>` - Zobrazí informace ke specifickému vzdálenému repozitáři `<vzdálený-repozitář>`.
 
 `git remote add <jméno> <url>` - Přidá nový vzdálený repozitář pojmenovaný `<jméno>` s url adresou `<url>`.
 
@@ -107,23 +107,23 @@ Důkazem rostoucí popularity využívání vzdálených repozitářů *(možná
 Pojďme spolupracovat
 ----
 
-Pravá síla stojící za gitem je zpráva rozdílů mezi jednotivými vezemi projektu.
+Pravá síla stojící za gitem je zpráva rozdílů mezi jednotlivými věžemi projektu.
 
 `git merge <branch>` - Připojí `<branch>` na aktuální HEAD.
 
-`git rebase <branch>` - Nastaví HEAD na `<branch>`. **! NEDĚLEJTE TO S JIŽ NAHRÁNÝMI COMMITY !**
+`git rebase <branch>` - Nastaví HEAD na `<branch>`. **! NEDĚLEJTE TO S JIŽ NAHRANÝMI COMMITY !**
 
 `git rebase --abort` - Zruší probíhající rebase.
 
 `git rebase --continue` - Pozastaví rebase, pokud narazíte na problémy, které musíte vyřešit. Po vyřešení problémů bude rebase pokračovat.
 
-`git mergetool` - Použije nakonfugorvaný nástroj pro mergenutí k řešení problémů.
+`git mergetool` - Použije nakonfigurovaný nástroj pro mergenutí k řešení problémů.
 
 `git add <soubor>` - Použijte editor pro manuální řešení konfliktů.
 
-`git rm <soubor>` - Odstraní již vyřšený soubor.
+`git rm <soubor>` - Odstraní již vyřešený soubor.
 
-Ctrl + Z!
+Plnou parou zpět!
 ----
 
 Každý děláme chyby.
@@ -136,16 +136,16 @@ Každý děláme chyby.
 
 `git revert <commit>` - Vrátí změny vytvořením commitu s opačnými změnami.
 
-`git reset --hard <commit>` - Navrátí HEAD na předchozí commit a smaže vŠechny změny provedené od té doby.
+`git reset --hard <commit>` - Navrátí HEAD na předchozí commit a smaže všechny změny provedené od té doby.
 
-`git reset <commit>` - Navrátí HEAD na předchozí commit a zachová vŠechny změny provedené od té doby.
+`git reset <commit>` - Navrátí HEAD na předchozí commit a zachová všechny změny provedené od té doby.
 
-`git reset --keep <commit>` - Navrátí HEAD na předchozí commit a zachová vŠechny necommitnuté změny.
+`git reset --keep <commit>` - Navrátí HEAD na předchozí commit a zachová všechny necommitnuté změny.
 
 Tipy a triky
 ----
 
-``git checkout -- `git ls-files -m` `` - Obnoví upravené soubory v aktuálním adresáři.
+`git checkout -- `git ls-files -m` `` - Obnoví upravené soubory v aktuálním adresáři.
 
 ``rm -rf `git ls-files --other --exclude-standard` `` - Odstraní nesledované soubory. **! BUĎTE OPATRNÍ !**
 
@@ -153,3 +153,7 @@ Tipy a triky
 
 Následující příkaz je užitečný pokud pracujete s repozitářem s velkými projekty  
 ``git checkout <branch> && rm -rf `git ls-files --other --exclude-standard` && git submodule update --init --recursive`` - Reset-checkout.. přepne na větev, odstraní nesledované soubory a znovu inicializuje submoduly.
+
+
+----
+Přeložil Kryštof Háva, zkontroloval JK.
