@@ -16,6 +16,7 @@ Zde je seznam absolvovaných hodin a nějaké materiály k tomu. Zbytek je v tea
 
 [3.1 Návod na větvení](03_lesson/GIT_BRANCHING.md)
 
+[4 - teoretická hodina](04_lesson/README.md)
 
 
 ## Samovzdělání, rozvoj, zajímavosti
