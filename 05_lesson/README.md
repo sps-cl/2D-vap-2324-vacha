@@ -9,4 +9,12 @@ V druhé části jsme si ukázali PAVELScript - interpretovaný jazyk sepsaný v
 
 Přikládám nějaké materialy k tvorbě vlastních jazyků (kompilovaných i interpretovaných): 
 
+https://www.youtube.com/watch?v=Eythq9848Fg - docela zajímává série
+
+https://www.freecodecamp.org/news/the-programming-language-pipeline-91d3f449c919/
+
+
+https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/
+
+
 https://llvm.org/docs/tutorial/ 
